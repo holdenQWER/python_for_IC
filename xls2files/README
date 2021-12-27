@@ -1,5 +1,5 @@
 Example:
-python xls2file.py -i register_dma.xlsx -o dma
+python xls2file_gen.py -i register_dma.xlsx -o dma
 
 Note:
 The newest version `xlrd` not support `xlsx` format; Need `pip install xlrd3`, `xlrd3` support both `xls` and `xlsx` ; Or useing older version;
