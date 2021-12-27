@@ -48,6 +48,7 @@ def GetExcell(xlsx):
    for rownum in range(sheet.nrows):
       row_val = sheet.row_values(rowx=rownum)
       if re.match(r'Name',row_val[0]):
+         counter = 0
          key = row_val[1].strip().upper()
          Regs[key] = [key]
          continue
@@ -68,7 +69,11 @@ def GetExcell(xlsx):
             Msb = int(result)
             Lsb = Msb
             Width = 1
-         FieldName = row_val[1].strip().upper()
+         if re.match('reserve',row_val[1],re.I):
+            FieldName = row_val[1].strip().upper() + str(counter)
+            counter += 1
+         else:
+            FieldName = row_val[1].strip().upper()
          AccessType = row_val[3].strip().lower()
          InitVal = re.search(r"('h.+)",row_val[4].strip()).group(1)
           #   field name(0) access_type(1) | Msb(2) | Lsb(3) | width(4) | initial value(5)
