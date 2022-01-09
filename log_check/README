@@ -1,0 +1,2 @@
+$ python log_check.py -l sim.log -r ignore_keywords.regex
+

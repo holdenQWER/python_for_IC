@@ -1,0 +1,31 @@
+##NOTE: [##NOTE] as comment identifier
+##NOTE: the ignore keywords format follow the usage of python regex
+
+
+##NOTE: common ignore keywords
+
+UVM_ERROR :    0 
+UVM_FATAL :    0 
+Failed to load FSDB dumper
+Number of demoted UVM_ERROR reports
+Number of caught UVM_ERROR reports
+Number of demoted UVM_FATAL reports
+Number of caught UVM_FATAL reports
+is_response_error
+Parsing included file.*error
+Back to file.*error
+-lerrorinf
+
+##NOTE: usb VIP ignore keywords
+max_retry_due_to_error
+lpm_max_retry_due_to_error
+tb_srp_fail
+enable_usb_ess_phy_single_bit_error_correction
+max_retry_due_to_error
+exclusive_monitor_error_control_reg
+error_response_policy
+allow_cache_update_on_coherent_error_response
+flag_cacheline_and_memory_coherency_check_per_xact_as_error
+os_error_callback
+enable_usb3x_tx_block_header_error_callback
+allow_multiple_concurrent_in_bursts_violation
